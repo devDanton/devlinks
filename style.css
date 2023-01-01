@@ -112,6 +112,7 @@ body {
 }
 
 ul {
+  FONT-WEIGHT: 100;
   list-style: none;
   display: flex;
   flex-direction: column;
@@ -171,6 +172,11 @@ footer {
   text-align: center;
   padding: 24px 0;
   font-size: 14px;
+  border: 1px;
+}
+
+footer a img {
+  margin-top: 10px;
 }
 
 /*Media queries*/
