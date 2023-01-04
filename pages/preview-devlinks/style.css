@@ -1,0 +1,99 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --text-color: white;
+  --avatar-image: url(../../assets/Avatar-Dark.png);
+  --background-image: url(../../assets/background-mobile-dark.jpg) no-repeat top center/cover;
+  --stroke-color: rgba(255, 255, 255, 0.5);
+  --surface-color: rgba(255, 255, 255, 0.05);
+  --surface-color-hover: rgba(255, 255, 255, 0.02);
+  --highlight-color: rgba(255, 255, 255, 0.2);
+  --switch-bg-url: url(../../assets/moon-stars.svg);
+}
+
+.light {
+  --text-color: black;
+  --avatar-image: url(../../assets/Avatar-Light.png);
+  --background-image: url(../../assets/background-mobile-light.jpg) no-repeat top center/cover;
+  --stroke-color: rgba(0, 0, 0, 0.5);
+  --surface-color: rgba(0, 0, 0, 0.05);
+  --surface-color-hover: rgba(0, 0, 0, 0.02);
+  --highlight-color: rgba(0, 0, 0, 0.1);
+  --switch-bg-url: url(../../assets/sun.svg);
+}
+
+body * {
+  font-family: 'Inter', sans-serif;
+  color: var(--text-color);
+}
+
+body {
+  height: 100%;
+  background: var(--background-image);
+}
+
+#container {
+  max-width: 588px;
+  margin: 56px auto;
+  padding: 0 24px;
+
+}
+
+#devlinks {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+#topicos {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+#topicos ul {
+  list-style-type: none;
+}
+
+#buttons {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  padding: 24px 0;
+}
+
+#buttons li a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 16px 24px;
+  background: var(--surface-color);
+  border: 1px solid var(--stroke-color);
+  border-radius: 8px;
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+  font-weight: 500;
+  text-decoration: none;
+  transition: background 0.2s;
+}
+
+#buttons li a:hover {
+  background: var(--surface-color-hover);
+  border: 1.5px solid var(--text-color);
+}
+
+@media (min-width: 700px) {
+  :root {
+    --background-image: url(../../assets/background-desktop-dark.jpg) no-repeat top center/cover;
+  }
+
+  .light {
+    --background-image: url(../../assets/background-desktop-light.jpg) no-repeat top center/cover;
+  }
+}
