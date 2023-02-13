@@ -7,24 +7,24 @@
 
 :root {
   --text-color: white;
-  --avatar-image: url(./assets/Avatar-Dark.png);
-  --background-image: url(./assets/background-mobile-dark.jpg) no-repeat top center/cover;
+  --avatar-image: url(../../assets/Avatar-Dark.png);
+  --background-image: url(../../assets/background-mobile-dark.jpg) no-repeat top center/cover;
   --stroke-color: rgba(255, 255, 255, 0.5);
   --surface-color: rgba(255, 255, 255, 0.05);
   --surface-color-hover: rgba(255, 255, 255, 0.02);
   --highlight-color: rgba(255, 255, 255, 0.2);
-  --switch-bg-url: url(./assets/moon-stars.svg);
+  --switch-bg-url: url(../../assets/moon-stars.svg);
 }
 
 .light {
   --text-color: black;
-  --avatar-image: url(./assets/Avatar-Light.png);
-  --background-image: url(./assets/background-mobile-light.jpg) no-repeat top center/cover;
+  --avatar-image: url(../../assets/Avatar-Light.png);
+  --background-image: url(../../assets/background-mobile-light.jpg) no-repeat top center/cover;
   --stroke-color: rgba(0, 0, 0, 0.5);
   --surface-color: rgba(0, 0, 0, 0.05);
   --surface-color-hover: rgba(0, 0, 0, 0.02);
   --highlight-color: rgba(0, 0, 0, 0.1);
-  --switch-bg-url: url(./assets/sun.svg);
+  --switch-bg-url: url(../../assets/sun.svg);
 }
 
 body * {
@@ -192,11 +192,11 @@ footer {
 /*Media queries*/
 @media (min-width: 700px) {
   :root {
-    --background-image: url(./assets/background-desktop-dark.jpg) no-repeat top center/cover;
+    --background-image: url(../../assets/background-desktop-dark.jpg) no-repeat top center/cover;
   }
 
   .light {
-    --background-image: url(./assets/background-desktop-light.jpg) no-repeat top center/cover;
+    --background-image: url(../../assets/background-desktop-light.jpg) no-repeat top center/cover;
   }
 }
 
