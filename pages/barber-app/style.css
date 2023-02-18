@@ -177,7 +177,7 @@ footer {
 #media {
   display: flex;
   flex-direction: column;
-  padding: 10px 0;
+  /* padding: 10px 0; */
   margin: auto;
   justify-content: center;
 }

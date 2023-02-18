@@ -44,6 +44,7 @@ body {
 }
 
 #container {
+  overflow-y: visible;
   width: 100%;
   max-width: 588px;
   /* top  X e Y Botton */
@@ -110,12 +111,35 @@ body {
 
 }
 
+#container div:nth-child(3) {}
+
 ul {
   list-style: none;
   display: flex;
   flex-direction: column;
   gap: 16px;
-  padding: 24px 0;
+  margin: 10px 0;
+  padding: 14px 5px 14px 0;
+  height: 400px;
+  overflow-y: auto;
+  scrollbar-width: 5px;
+  scrollbar-color: rgba(255, 255, 255, 0.5) transparent;
+}
+
+/* Largura da barra de rolagem */
+ul::-webkit-scrollbar {
+  width: 5px;
+}
+
+/* cor da barra de rolagem no Chrome */
+ul::-webkit-scrollbar-thumb {
+  background-color: rgba(255, 255, 255, 0.5);
+
+}
+
+/* Cor do fundo da barra de rolagem no Chrome */
+ul::-webkit-scrollbar-track {
+  background-color: transparent;
 }
 
 ul li a {
