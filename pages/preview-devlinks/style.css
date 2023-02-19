@@ -88,6 +88,13 @@ body {
   border: 1.5px solid var(--text-color);
 }
 
+footer {
+  text-align: center;
+  padding-bottom: 24px;
+  font-size: 14px;
+
+}
+
 @media (min-width: 700px) {
   :root {
     --background-image: url(../../assets/background-desktop-dark.jpg) no-repeat top center/cover;
