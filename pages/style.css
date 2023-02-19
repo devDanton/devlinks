@@ -40,8 +40,8 @@ body {
 
   /*Shorthand de background*/
   background: var(--background-image);
-  height: 100%;
-  width: 100%;
+  min-height: 100vh;
+  min-width: 100vw;
 }
 
 #container {

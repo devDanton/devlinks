@@ -40,12 +40,11 @@ body {
 
   /*Shorthand de background*/
   background: var(--background-image);
-  height: 100%;
-  width: 100%;
+  min-height: 100vh;
 }
 
 #container {
-  height: 100vh;
+  height: 100%;
   max-width: 588px;
   /* top  X e Y Botton */
   margin: 0 auto 0px;
