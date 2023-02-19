@@ -38,8 +38,8 @@ body {
 
 #container {
   max-width: 588px;
-  margin: 56px auto;
-  padding: 0 24px;
+  margin: 0 auto 0px;
+  padding: 56px 24px 0;
 
 }
 
